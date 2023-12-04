@@ -43,7 +43,7 @@ class UpdateActivity : ActivityWithMenus() {
     //Oculta el teclado cuando terminamos de escribir en el cuadro de texto
     fun Context.hideKeyboard() {
         val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.hideSoftInputFromWindow(binding.nombreAlumno.windowToken, 0)
+        inputMethodManager.hideSoftInputFromWindow(binding.nuevoCurso.windowToken, 0)
     }
 
     fun updateAlumno(nombreAlumno: String, nuevoCurso: String) {
